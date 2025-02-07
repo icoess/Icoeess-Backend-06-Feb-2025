@@ -56,7 +56,7 @@ const ContactDetailssend = async (req, res) => {
         const Receiver = await Transporter.sendMail({
             from: process.env.USER,
             to: `${email}`,
-            subject: "Thank You for Reaching Out!",
+            subject: "ICOESS Solutions: Thank You for Reaching Out!",
             html: `<p>Hi ${fullname}</p>
 
             <p>Thank you for contacting us! We’ve received your message, and our team will get back to you as soon as possible.</p>

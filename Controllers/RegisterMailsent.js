@@ -42,7 +42,7 @@ const Mailsend = async (req, res) => {
         const Receiver = await transporter.sendMail({
             from: 'dileeptiwari8962@gmail.com',
             to: `${email}`,
-            subject: `Successful Registration of '${course}' at Icoess Solutions.`,
+            subject: `ICOESS Solutions: Successful Registration of '${course}' `,
             html: `
             <p>Dear ${fullname},</p>
 
