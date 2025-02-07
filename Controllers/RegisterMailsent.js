@@ -19,7 +19,7 @@ const Mailsend = async (req, res) => {
         const Owner = await transporter.sendMail({
             from: process.env.USER,
             to: process.env.OWNER,
-            subject: "Student Register",
+            subject: `Student Registration inquiry for '${course}'`,
             html: `<p>A new student has successfully registered at Icoess Solutions Pvt. Ltd.</p>
             <p><strong>Below are the details:</strong></p>
             <ul>
@@ -42,7 +42,7 @@ const Mailsend = async (req, res) => {
         const Receiver = await transporter.sendMail({
             from: 'dileeptiwari8962@gmail.com',
             to: `${email}`,
-            subject: 'Successful Registration at Icoess Solutions Pvt. Ltd.',
+            subject: `Successful Registration of '${course}' at Icoess Solutions.`,
             html: `
             <p>Dear ${fullname},</p>
 
@@ -72,7 +72,7 @@ const Mailsend = async (req, res) => {
         });
 
 
-        res.status(200).json({ message: "Mail sent Successfull" })
+        res.status(200).json({ message: "Mail sent Successfull",status:"success" })
     } catch (err) {
         res.status(500).json({ message: "Mail not sent please try again", Error: err })
     }
