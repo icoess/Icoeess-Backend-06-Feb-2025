@@ -48,7 +48,7 @@ const ContactDetailssend = async (req, res) => {
             </ul>
 
             <p>Please review and respond accordingly.</p>
-            <p><strong>Best Regards,</strong><br>Icoess Solutions Pvt. Ltd.</p>
+            <p><strong>Best Regards,</strong><br>ICOESS Solutions Pvt. Ltd.</p>
 
             `
         })
@@ -62,7 +62,7 @@ const ContactDetailssend = async (req, res) => {
             <p>Thank you for contacting us! We’ve received your message, and our team will get back to you as soon as possible.</p>
             <p>If your inquiry is urgent, please feel free to call us directly at <a href="tel:+919981810146">+919981810146</a></p>
             <br>
-            <p><strong>Best Regards,</strong><br>Icoess Solutions Pvt. Ltd.</p>
+            <p><strong>Best Regards,</strong><br>ICOESS Solutions Pvt. Ltd.</p>
             <a href="https://icoesolution.com">https://icoesolution.com</a><br>
             <a href="tel:+919981810146">+919981810146</a><br>
             <a href="mailto:girjesh.mishra@icoesolution.com">girjesh.mishra@icoesolution.com</a>

@@ -19,7 +19,7 @@ const Mailsend = async (req, res) => {
         const Owner = await transporter.sendMail({
             from: process.env.USER,
             to: process.env.OWNER,
-            subject: `Student Registration inquiry for '${course}'`,
+            subject: `Student Registration confirmation for '${course}'`,
             html: `<p>A new student has successfully registered at Icoess Solutions Pvt. Ltd.</p>
             <p><strong>Below are the details:</strong></p>
             <ul>
@@ -35,7 +35,7 @@ const Mailsend = async (req, res) => {
                 <li><strong>Transaction ID:</strong> ${trnxid}</li>
             </ul>
             <p>Please review the registration details and take the necessary actions.</p>
-            <p><strong>Best Regards,</strong><br>Icoess Solutions Pvt. Ltd.</p>
+            <p><strong>Best Regards,</strong><br>ICOESS Solutions Pvt. Ltd.</p>
             `,
         });
 
@@ -67,7 +67,7 @@ const Mailsend = async (req, res) => {
             <p>Mobile: <a href="tel:+919981810146">+919981810146</a>
             <p>Whatsapp: <a href="https://wa.me/+919981810146">+919981810146</a></p>
 
-            <p><strong>Best Regards,</strong><br>Icoess Solutions Pvt. Ltd.</p>
+            <p><strong>Best Regards,</strong><br>ICOESS Solutions Pvt. Ltd.</p>
         `,
         });
 

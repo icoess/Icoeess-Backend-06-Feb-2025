@@ -43,7 +43,7 @@ const ApplyInquiry = async (req, res) => {
                 <li><strong>Message:</strong> ${message}</li>
             </ul>
             <p>Please review and respond.</p>
-            <p><strong>Best Regards,</strong><br>Icoess Solutions Pvt. Ltd.</p>
+            <p><strong>Best Regards,</strong><br>ICOESS Solutions Pvt. Ltd.</p>
             `
         })
 
@@ -64,7 +64,7 @@ const ApplyInquiry = async (req, res) => {
                 <li><strong>Message:</strong> ${message}</li>
             </ul>
 
-            <p><strong>Best Regards,</strong><br>Icoess Solutions Pvt. Ltd.</p><br>
+            <p><strong>Best Regards,</strong><br>ICOESS Solutions Pvt. Ltd.</p>
             <p>Mobile: <a href="tel:+919981810146">+919981810146</a></p>
             <p>Whatsapp: <a href="https://wa.me/+919981810146">+919981810146</a></p>`
         })
