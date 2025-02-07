@@ -5,7 +5,7 @@ const router = require("./Router/Router")
 dotenv.config()
 
 
-const Port = process.env.PORT
+const Port = process.env.PORT || 3000
 
 const app= express()
 
