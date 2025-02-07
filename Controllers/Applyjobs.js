@@ -56,7 +56,7 @@ const Jobdetails = async (req, res) => {
 
             // Upload the resume to Cloudinary
             const resumeUpload = await cloudinary.uploader.upload(req.file.path, {
-                folder: 'Resumes', 
+                folder: 'Resumes',
             });
 
             const resumeURL = resumeUpload.secure_url;
@@ -64,15 +64,20 @@ const Jobdetails = async (req, res) => {
             const OwnerMail = await Transporter.sendMail({
                 from: process.env.USER,
                 to: process.env.OWNER,
-                subject: `New Job Application from ${fullname}`,
+                subject: `ICOESS Solutions: New Job Application from ${fullname}`,
                 html: `<p>A new job application has been received!</p>
-                    <p><strong>Name:</strong> ${fullname}</p>
-                    <p><strong>Email:</strong> ${email}</p>
-                    <p><strong>Phone:</strong> ${number}</p>
-                    <p><strong>Department:</strong> ${department}</p>
-                    <p><strong>Job Title:</strong> ${jobtitle}</p>
-                    <p><strong>Experience:</strong> ${experience}</p>
-                    <p><strong>Resume:</strong> <a href="${resumeURL}" download="${resumeURL}">View Resume</a></p>`,
+                        <p><strong>Below are the details:</strong></p>
+                        <ul>
+                            <li><strong>Full Name:</strong> ${fullname}</li>
+                            <li><strong>Phone Number:</strong> ${number}</li>
+                            <li><strong>Email:</strong> ${email}</li>
+                            <li><strong>Department:</strong> ${department}</li>
+                            <li><strong>Job Title:</strong> ${jobtitle}</li>
+                            <li><strong>Experince:</strong> ${experience}</li>
+                            <li><strong>Resume:</strong> <a href="${resumeURL}" download="${resumeURL}">View Resume</a></li>
+                        </ul>
+                        <p>Please review the registered details and take the necessary actions.</p>
+                        <p><strong>Best Regards,</strong><br>ICOESS Solutions Pvt. Ltd.</p>`,
             });
 
             const ReceiverMail = await Transporter.sendMail({
