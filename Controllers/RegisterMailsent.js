@@ -28,11 +28,11 @@ const Mailsend = async (req, res) => {
                 <li><strong>Email:</strong> ${email}</li>
                 <li><strong>Date of Birth:</strong> ${dob}</li>
                 <li><strong>Selected Course:</strong> ${course}</li>
-                <li><strong>Message:</strong> ${message}</li>
                 <li><strong>Total Amount:</strong> ₹${totalamount}</li>
                 <li><strong>Registration Amount:</strong> ₹${registrationamount}</li>
                 <li><strong>Receipt Number:</strong> ${receiptno}</li>
                 <li><strong>Transaction ID:</strong> ${trnxid}</li>
+                <li><strong>Message:</strong> ${message}</li>
             </ul>
             <p>Please review the registration details and take the necessary actions.</p>
             <p><strong>Best Regards,</strong><br>ICOESS Solutions Pvt. Ltd.</p>
