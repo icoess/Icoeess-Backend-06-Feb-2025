@@ -54,11 +54,11 @@ const Mailsend = async (req, res) => {
                 <li><strong>Email:</strong> ${email}</li>
                 <li><strong>Date of Birth:</strong> ${dob}</li>
                 <li><strong>Selected Course: ${course}</strong></li>
-                <li><strong>Message:</strong> ${message}</li>
                 <li><strong>Total Amount:</strong> ${totalamount}</li>
                 <li><strong>Registration Amount:</strong> ₹${registrationamount}</li>
                 <li><strong>Receipt Number:</strong> ${receiptno}</li>
                 <li><strong>Transaction ID:</strong> ${trnxid}</li>
+                <li><strong>Message:</strong> ${message}</li>
             </ul>
 
             <p>Your registration for the selected course is now complete. We will be in touch with you shortly to provide further details regarding your course schedule and additional instructions.</p>
